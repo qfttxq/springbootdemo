@@ -18,7 +18,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.OK)
     @ExceptionHandler({Exception.class})
     public String handleException(Exception e){
-        log.error(e.getMessage(),e.getStackTrace());
+        log.error(e.getMessage(),e.getCause());
         return e.getMessage();
     }
 }
