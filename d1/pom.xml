@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
     <version>1.0</version>
     <name>d1</name>
-    <description>一个demo</description>
+    <description>一个包括纺一异常和统一日志及session超时的demo</description>
 
     <properties>
         <java.version>1.8</java.version>

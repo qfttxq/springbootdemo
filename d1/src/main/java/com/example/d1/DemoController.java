@@ -15,8 +15,8 @@ public class DemoController {
     @Log("对世界说了一句你好")
     public String sayHello() throws Exception {
         //log.info("aabbbbbbbbbbbbbbbbbbbbbbbbbbbb");
-        //throw new Exception("abc");
-        return "hello ,world";
+        throw new Exception("发生了一个异常");
+        //return "hello ,world";
     }
     @RequestMapping("check")
     public String check(HttpServletRequest request){
