@@ -18,7 +18,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.OK)
     @ExceptionHandler({Exception.class})
     public String handleException(Exception e){
-        log.error(e.getMessage(),e.getCause());
+        log.error(e.getMessage(),e);  //这里第二个参数要传入e,才能打印出完整的异常堆栈信息
         return e.getMessage();
     }
 }
